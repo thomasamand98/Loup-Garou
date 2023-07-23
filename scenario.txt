@@ -1,0 +1,45 @@
+
+1) attribution rôle
+2) nuit
+3) actions nuit
+	si première nuit -> cupidon choix page de votes 2 fois 
+	sorcière : 	si reste potion vie alors choix vie
+					-> page de vote (gens morts)
+					-> suite en étape 4
+				si reste potion mort alors choix mort
+					-> page vote (gens vivants)
+					-> suite en étape 4
+					
+	voyante : -> page vote (gens vivants) + visu carte 
+	
+	loups : 1 vote + visualisation des votes des autres loups
+	vilageois : rien
+
+4) réveille + révelation des morts en fonction des choix rôles
+5) fin de partie ? (si autant de loup que de villageois)
+6) si première journée -> vote maire 
+7) vote loup elimination 
+8) fin de partie ? (si autant de loup que de villageois)
+9) nuit retour 2)
+
+
+
+
+
+
+
+Rôles : 
+- Villageois
+- Loups
+- Sorcière
+- Voyante
+- Petite fille
+- Chasseur
+- Garde
+- Cupidon
+- 
+
+
+
+
+
