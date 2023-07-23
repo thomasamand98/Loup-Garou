@@ -20,9 +20,6 @@ function send(pseudo:string) {
 }
 
 
-
-
-
 function App() {
 
   
