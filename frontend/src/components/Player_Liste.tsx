@@ -33,7 +33,27 @@ export const Player_Liste=() => {
         role:"Villageoise",
         image:villageois,
         gentil:true
-    }]
+    },{
+        name:"Emilie",
+        role:"Villageoise",
+        image:villageois,
+        gentil:true
+    },{
+        name:"Emilie",
+        role:"Villageoise",
+        image:villageois,
+        gentil:true
+    },{
+        name:"Emilie",
+        role:"Villageoise",
+        image:villageois,
+        gentil:true
+    },{
+        name:"Emilie",
+        role:"Villageoise",
+        image:villageois,
+        gentil:true
+    },]
 
 
     
@@ -43,32 +63,35 @@ export const Player_Liste=() => {
         <style>
             {`
                 .player {   
-                    width: 100%;
+                    width: 50%;
                     float: left;
-                    border-left: 50px solid transparent;
-                    border-bottom: 30px solid transparent;
+                    margin-bottom: 30px;
+                    text-align: center;
                 }
-                @media(min-width : 200px){.player{width : 100%}}
-                @media(min-width : 1000px){.player{width : 50%}}
-                @media(min-width : 1500px){.player{width : 33.333%}}
+
 
                 .carte {
                     border-radius: 15px;
                     margin: auto;
-                    width: 500px;
-                    height: 250px;
+                    width: 90%;
+                    max-width: 400px;
+                    aspect-ratio: 1/0.6;
                     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2RNp4Zic_j5oQIZ1cvnqxdWOoH3DiVih4_g&usqp=CAU");
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-size: auto 100%;
+                    background-size: 100% 100%;
                     box-shadow: 0px 0px 10px 2px #FFECC3;
                 }
                 
-
+                
                 .profile {
+                    float: left;
                     text-align: left;
-                    margin-left: 10px;
+                    margin-left: 2%;
+                    width: 40%;
                 }
+                
+
                 
                 .profile-picture {
                     float: left;
@@ -79,13 +102,15 @@ export const Player_Liste=() => {
                 }
 
                 .img {
-                    width: 190px;
+                    width: 80%;
                     border-radius: 5px;
                 }
+                
 
                 .profile-name {
                     color: white;
-                    font-size: 35px;
+                    font-size: 2%;
+                    width: 100%;
                 }
 
                 .carte:hover {
@@ -96,6 +121,27 @@ export const Player_Liste=() => {
                 .carte:hover h1 {
                     color: #CC2222;
                 }
+                
+                @media (min-width: 1327px){ .player{width:33.33%;}}
+                @media (min-width: 1600px){ .player{width:25%;}}
+                @media (min-width: 2205px){ .player{width:20%;}}
+                @media (min-width: 2970px){ .player{width:15%;}}
+                
+
+                .carte  {
+                    animation-duration: 1s;
+                    animation-name: clignoter;
+                    animation-iteration-count: infinite;
+                    transition: none;
+                 }
+                 @keyframes clignoter {
+                   0%    {box-shadow: 0px 0px 10px 3px #FFECC3; }
+                   25%   {box-shadow: 0px 0px 10px 3px #FFECC3; }
+                   50%   {box-shadow: 0px 0px 10px 2px #FFECC3; }
+                   75%   {box-shadow: 0px 0px 10px 3px #FFECC3; }
+                   100%  {box-shadow: 0px 0px 10px 3px #FFECC3; }
+                 }
+
 
 
                 *{box-sizing:border-box;}

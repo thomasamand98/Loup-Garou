@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <a onClick={() => {send("toto")}} >
-         <img src="https://viva.villeurbanne.fr/var/site/storage/images/_aliases/article_picture/5/8/1/9/319185-1-fre-FR/Joueradistance.jpg"></img>
+         
       </a>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
