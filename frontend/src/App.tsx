@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Player_Liste } from './components/Player_Liste';
 
 let socket = new WebSocket("ws://localhost:3001");
 
 
-function test(){
+/*function test(){
   const url="http://localhost:3001/hello";
   var myFetch = fetch(url);
 
   myFetch.then(function (response) {
     response.text().then(text => {console.log(text)});
   })
-}
+}*/
 
 
 function send(pseudo:string) {
@@ -36,13 +37,13 @@ function App() {
   return (
     <div className="App">
       <a onClick={() => {send("toto")}} >
-        <img src="https://viva.villeurbanne.fr/var/site/storage/images/_aliases/article_picture/5/8/1/9/319185-1-fre-FR/Joueradistance.jpg"></img>
+         <img src="https://viva.villeurbanne.fr/var/site/storage/images/_aliases/article_picture/5/8/1/9/319185-1-fre-FR/Joueradistance.jpg"></img>
       </a>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world
-        </p>
+        <div>
+          <Player_Liste></Player_Liste>
+        </div>
         
       </header>
     </div>
